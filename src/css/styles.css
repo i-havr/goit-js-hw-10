@@ -14,7 +14,33 @@ body {
 
 #search-box {
   font: inherit;
+  margin-left: 40px;
   padding: 8px;
   max-width: 320px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 40;
+  padding: 0;
+  /* list-style: none; */
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+}
+
+li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+img {
+  margin-right: 10px;
+}
+
+.title-info {
+  display: flex;
 }
