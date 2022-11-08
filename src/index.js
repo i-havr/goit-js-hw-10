@@ -5,7 +5,7 @@ import './css/styles.css';
 
 const DEBOUNCE_DELAY = 300;
 
-refs = {
+const refs = {
   nameInput: document.querySelector('#search-box'),
   countryList: document.querySelector('.country-list'),
 };
