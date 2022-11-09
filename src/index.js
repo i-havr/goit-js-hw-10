@@ -17,13 +17,8 @@ function onNameInput(event) {
 
   if (inputedRequest !== '') {
     fetchCountries(inputedRequest)
-      .then(countries => {
-        renderCountriesList(countries);
-      })
-      .catch(error => {
-        console.log(error);
-        notifyFailure();
-      });
+      .then(renderCountriesList)
+      .catch(notifyFailure);
   } else refs.countryList.innerHTML = '';
 }
 
